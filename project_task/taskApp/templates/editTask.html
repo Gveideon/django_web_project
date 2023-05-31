@@ -1,0 +1,9 @@
+{%extends "layout.html"%}
+{%block main%} 
+<a>{{message }}</a>
+<form method="post" action="">
+    {% csrf_token %}
+    Поле для изменений: <input name="task" type="text" /></p>
+    <input type="submit" value="сохранить изменения"/>
+</form>
+{%endblock main%}

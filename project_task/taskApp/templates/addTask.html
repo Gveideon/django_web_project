@@ -1,0 +1,9 @@
+{%extends "layout.html"%}
+{%block main%} 
+<a>{{message }}</a>
+<form method="post" action="add">
+    {% csrf_token %}
+    Что нужно сделать: <input name="task" type="text"/></p>
+    <input type="submit" value="сохранить" />
+</form>
+{%endblock main%}

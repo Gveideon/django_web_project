@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>>{%block title%}{%endblock title%}</title>
+</head>
+
+<body>
+    <header>
+        <h1> {%block header_text%}{%endblock header_text%} </h1>
+    </header>
+    <nav>
+    <ul>
+            <li>
+                <a href="">Главная</a>
+            </li>
+            <li>
+                <a href="list">Список дел</a>
+            </li>
+            <li>
+                <a href="add">добавить дело</a>
+            </li>
+            <!-- <li>
+                <a href="hidden.php">Скрытая страница</a>
+            </li> -->
+        </ul> 
+    </nav>
+
+    <main>
+        {%block main%}{%endblock main%}
+    <main>
+
+    <footer>
+        <h2>
+            Суржко, 2012
+        </h2>
+            <!-- <a href ="exit.php" > Exit</a> -->
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+{%extends "layout.html"%}
+{%block main%} <body>
+    <h1>list tasks </h1>
+    <h3>table view</h3>
+    {% if taskList %}
+    <ul>
+        {% for task in taskList %}
+        <li> {{task.task}} <a href = "editForm/{{task.id}}">(редактировать)</a> -- <a href = "deleteTask/{{task.id}}">(удалить)</a></li>
+        {% endfor %}
+    </ul>
+    {% else %}
+    <p>list is empty</p>
+    {% endif %}
+</body>
+{%endblock main%}
+<!-- <body>
+    <h1>list tasks </h1>
+    <h3>table view</h3>
+    {% if taskList %}
+    <ul>
+        {% for task in taskList %}
+        <li><a> {{task.task}}</a></li>
+        {% endfor %}
+    </ul>
+    {% else %}
+    <p>list is empty</p>
+    {% endif %}
+</body> -->
